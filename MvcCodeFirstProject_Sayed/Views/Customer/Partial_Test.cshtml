@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MvcCodeFirstProject_Sayed.Models.Customer>
+@{
+    ViewBag.Title = "Partial_Test";
+  
+
+}
+
+<h2>Customer_Partial</h2>
+
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_Customer", item)
+}
